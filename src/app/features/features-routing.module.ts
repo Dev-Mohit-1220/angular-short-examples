@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CustomPipeViewerComponent } from './custom-pipe-viewer/custom-pipe-viewer.component';
 import { Paths } from '../core/constants/path.constant';
+import { FeatureListComponent } from './components/feature-list/feature-list.component';
 
 const routes: Routes = [
   {
     path: Paths.EMPTY,
-    component: CustomPipeViewerComponent,
+    component: FeatureListComponent,
   },
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class FeatureRoutingModule {}
+export class FeaturesRoutingModule {}

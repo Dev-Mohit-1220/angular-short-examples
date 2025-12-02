@@ -1,5 +1,5 @@
 @for(cardItem of cardList; track cardItem) {
-<div class="">
+<div class="mike-card" (click)="onCardClick(cardItem)">
   <mat-card appearance="outlined">
     <mat-card-content>{{cardItem.title | uppercase}}</mat-card-content>
   </mat-card>
