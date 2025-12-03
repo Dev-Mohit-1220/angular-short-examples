@@ -4,6 +4,7 @@ import { Paths } from '../core/constants/path.constant';
 import { FeatureListComponent } from './components/feature-list/feature-list.component';
 import { PipeViewerComponent } from './components/pipe-viewer/pipe-viewer.component';
 import { DialogViewerComponent } from './components/dialog-viewer/dialog-viewer.component';
+import { FormViewerComponent } from './components/form-viewer/form-viewer.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: Paths.DIALOG,
     component: DialogViewerComponent,
+  },
+  {
+    path: Paths.FORM,
+    component: FormViewerComponent,
   },
 ];
 

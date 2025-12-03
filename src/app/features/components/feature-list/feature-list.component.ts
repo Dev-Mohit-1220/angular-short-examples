@@ -19,6 +19,11 @@ export class FeatureListComponent {
       title: 'Dialog Example (Delete)',
       navigation: '/dialog',
     },
+    {
+      title:
+        'Create a simple Angular form using `FormGroup` and `FormControl` to capture name and email, display validation errors, and show submitted values below the form.',
+      navigation: '/form',
+    },
   ];
 
   onCardSelect(value: CardConfiguration): void {

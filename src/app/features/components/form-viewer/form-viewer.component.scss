@@ -1,0 +1,28 @@
+.user-form {
+  width: 450px;
+  flex-direction: column;
+  gap: 35px;
+  display: flex;
+}
+
+mike-form-viewer {
+  height: 100%;
+}
+
+.user-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.form-values {
+  .success {
+    color: green;
+  }
+
+  .error {
+    color: red;
+  }
+}

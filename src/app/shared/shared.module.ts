@@ -8,6 +8,7 @@ import { CardComponent } from './components/card/card.component';
 import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { UserFormComponent } from './components/user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     HighlightPipe,
     UppercasePipe,
     BoldHighlightPipe,
+    UserFormComponent,
   ],
   imports: [CommonModule, MatCardModule, MatDialogModule, MatButtonModule],
   exports: [

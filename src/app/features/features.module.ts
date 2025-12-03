@@ -7,13 +7,26 @@ import { SharedModule } from '../../app/shared/shared.module';
 import { PipeViewerComponent } from './components/pipe-viewer/pipe-viewer.component';
 import { DialogViewerComponent } from './components/dialog-viewer/dialog-viewer.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { FormViewerComponent } from './components/form-viewer/form-viewer.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
     FeatureListComponent,
     PipeViewerComponent,
     DialogViewerComponent,
+    FormViewerComponent,
   ],
-  imports: [CommonModule, FeaturesRoutingModule, SharedModule, MatDialogModule],
+  imports: [
+    CommonModule,
+    FeaturesRoutingModule,
+    SharedModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+  ],
 })
 export class FeaturesModule {}

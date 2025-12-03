@@ -1,0 +1,57 @@
+<div class="user-form-wrapper">
+  @if(userForm) {
+  <form [formGroup]="userForm" class="user-form">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="name" formControlName="name" />
+      <mat-hint>Enter your full name</mat-hint>
+      @if (userForm.controls['name'].hasError('required')) {
+      <mat-error>Name is required</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" formControlName="email" />
+      <mat-hint
+        >Enter your valid email, in future we contact you on this
+        email</mat-hint
+      >
+      @if (userForm.controls['email'].hasError('required')) {
+      <mat-error>Email is required</mat-error>
+      } @if (userForm.controls['email'].hasError('email')) {
+      <mat-error>Enter valid email</mat-error>
+      }
+    </mat-form-field>
+    <button mat-button (click)="onSubmitForm()">Submit</button>
+  </form>
+  }
+  <div class="form-values">
+    Userform values:
+    <h4>
+      Name:
+      <span
+        [ngClass]="
+          userForm?.get('name')?.touched
+            ? userForm?.get('name')?.valid
+              ? 'success'
+              : 'error'
+            : ''
+        "
+      >
+        {{ userForm?.get("name")?.value ?? "" }}
+      </span>
+    </h4>
+    <h4>
+      Email:
+      <span [ngClass]="
+          userForm?.get('email')?.touched
+            ? userForm?.get('email')?.valid
+              ? 'success'
+              : 'error'
+            : ''
+        ">{{
+        userForm?.get("email")?.value
+      }}</span>
+    </h4>
+  </div>
+</div>
