@@ -15,6 +15,10 @@ export class FeatureListComponent {
       title: 'Pipe Examples',
       navigation: '/features',
     },
+    {
+      title: 'Dialog Example (Delete)',
+      navigation: '/dialog',
+    },
   ];
 
   onCardSelect(value: CardConfiguration): void {
