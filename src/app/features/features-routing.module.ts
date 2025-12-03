@@ -5,6 +5,7 @@ import { FeatureListComponent } from './components/feature-list/feature-list.com
 import { PipeViewerComponent } from './components/pipe-viewer/pipe-viewer.component';
 import { DialogViewerComponent } from './components/dialog-viewer/dialog-viewer.component';
 import { FormViewerComponent } from './components/form-viewer/form-viewer.component';
+import { OfServiceViewerComponent } from './components/of-service-viewer/of-service-viewer.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: Paths.FORM,
     component: FormViewerComponent,
+  },
+  {
+    path: Paths.OF_SERVICE,
+    component: OfServiceViewerComponent,
   },
 ];
 

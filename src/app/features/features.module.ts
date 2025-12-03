@@ -11,6 +11,7 @@ import { FormViewerComponent } from './components/form-viewer/form-viewer.compon
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { OfServiceViewerComponent } from './components/of-service-viewer/of-service-viewer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     PipeViewerComponent,
     DialogViewerComponent,
     FormViewerComponent,
+    OfServiceViewerComponent,
   ],
   imports: [
     CommonModule,

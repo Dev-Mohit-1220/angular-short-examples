@@ -4,4 +4,5 @@ export class Paths {
   static readonly PIPE = 'pipe';
   static readonly DIALOG = 'dialog';
   static readonly FORM = 'form';
+  static readonly OF_SERVICE = 'of-service';
 }

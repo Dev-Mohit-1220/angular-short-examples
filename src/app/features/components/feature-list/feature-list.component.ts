@@ -24,6 +24,11 @@ export class FeatureListComponent {
         'Create a simple Angular form using `FormGroup` and `FormControl` to capture name and email, display validation errors, and show submitted values below the form.',
       navigation: '/form',
     },
+    {
+      title:
+        'Make a service that returns an observable using `of()` and inject it into a component using Angular DI, then subscribe in the component and display the fetched data.',
+      navigation: '/of-service',
+    },
   ];
 
   onCardSelect(value: CardConfiguration): void {
